@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400, 700;
+  font-family: lexend dexa, big shoulder display;
+  background-color: white;
+}
+
+#section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.flexcontainer {
+  display: flex;
+}
+
+a:link,a:visited {
+  border: 1px solid;
+  border-radius: 25px;
+  border-collapse: collapse;
+  background-color: white;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+.a:link,.a:visited {
+    color: hsl(31, 77%, 52%);
+}
+
+.a:hover,.a:active {
+    color:white;
+    background-color:hsl(31, 77%, 52%);
+}
+
+.a2:link,.a2:visited {
+    color: hsl(184, 100%, 22%);
+}
+
+.a2:hover,.a2:active {
+    color:white;
+    background-color:hsl(184, 100%, 22%);
+}
+
+.a3:link,.a3:visited {
+    color: hsl(179, 100%, 13%);;
+}
+
+.a3:hover,.a:active {
+ color:white;
+ background-color:hsl(179, 100%, 13%);
+}
+
+
+
+.SEDANS {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.SUV {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.LUXURY {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75) ;
+}
+
+@media only screen and (max-width:700px) { 
+
+    .flexcontainer{
+        flex-direction: column;
+    }
+
+   .LUXURY{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    }
+
+  .SEDANS {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    }
+
+}
