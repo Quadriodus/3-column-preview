@@ -12,15 +12,16 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
 
 .flexcontainer {
   display: flex;
 }
 
-a:link,a:visited {
-  border: 1px solid;
+a:link,
+a:visited {
+  color: white;
+  border: 1px solid white;
   border-radius: 25px;
   border-collapse: collapse;
   background-color: white;
@@ -31,34 +32,27 @@ a:link,a:visited {
   text-decoration: none;
   display: inline-block;
 }
-.a:link,.a:visited {
-    color: hsl(31, 77%, 52%);
+
+a:hover,
+a:active {
+  color: white !important;
+  background-color: transparent;
 }
 
-.a:hover,.a:active {
-    color:white;
-    background-color:hsl(31, 77%, 52%);
+.a1:link,
+.a1:visited {
+  color: hsl(31, 77%, 52%);
 }
 
-.a2:link,.a2:visited {
-    color: hsl(184, 100%, 22%);
+.a2:link,
+.a2:visited {
+  color: hsl(184, 100%, 22%);
 }
 
-.a2:hover,.a2:active {
-    color:white;
-    background-color:hsl(184, 100%, 22%);
+.a3:link,
+.a3:visited {
+  color: hsl(179, 100%, 13%);
 }
-
-.a3:link,.a3:visited {
-    color: hsl(179, 100%, 13%);;
-}
-
-.a3:hover,.a:active {
- color:white;
- background-color:hsl(179, 100%, 13%);
-}
-
-
 
 .SEDANS {
   background-color: hsl(31, 77%, 52%);
@@ -78,30 +72,28 @@ a:link,a:visited {
 }
 
 h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 p {
-    color: hsla(0, 0%, 100%, 0.75) ;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
-@media only screen and (max-width:700px) { 
+@media only screen and (max-width: 1000px) {
+  .flexcontainer {
+    flex-direction: column;
+  }
 
-    .flexcontainer{
-        flex-direction: column;
-    }
-
-   .LUXURY{
+  .LUXURY {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
-    }
+  }
 
   .SEDANS {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
-    }
-
+  }
 }
